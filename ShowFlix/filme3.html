@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ShowFlix</title>
+</head>
+<Style>
+    body {
+        background-color: black;
+    }
+    #centro {
+        margin: auto;
+        width: 1000px;
+        height: 1000px;
+        position: relative;
+    }
+    @media screen and (max-width: 768px) {
+            #centro {
+            width: 450px;
+            height: 550px;
+        }
+    }
+    #logo {
+        color: red;
+        font-size: 40px;
+    }
+    @media screen and (max-width: 768px) {
+            #logo {
+            margin-left: 160px;
+            font-size: 40px;
+        }
+    }
+    #video {
+        border: 0px;
+    }
+    @media screen and (max-width: 768px) {
+            #video {
+            width: 450px;
+            height: 300px;
+        }
+    }
+    h3,p {
+        color: white;
+        text-align: justify;
+    }
+    @media screen and (max-width: 768px) {
+            #h3,p {
+            color: white;
+            margin: 0%;
+            text-align: justify;
+            width: 450px;
+
+        }
+    }
+</Style>
+<body>
+    <h2 id="logo">ShowFlix</h2>
+    <div id="centro">
+        <iframe id="video" controls width="100%" height="600px" src="https://www.youtube.com/embed/uKY0dYfOibI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h3>O Homem nas Trevas</h3>
+        <h3>Sinopse</h3>
+        <p>Rocky, Alex e Money são ladrões que ganham dinheiro invadindo casas de pessoas ricas em Detroit. Money fica sabendo sobre um veterano de guerra cego que ganhou muito dinheiro pela morte de sua única filha. Pensando ser um alvo fácil, o trio invade a casa isolada do homem em uma vizinhança abandonada. Após se verem presos lá dentro, os jovens invasores têm que lutar por suas vidas ao descobrirem que a vítima não é nada inofensiva..</p>
+    </div>
+    
+</body>
+</html>

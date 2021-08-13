@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ShowFlix</title>
+</head>
+<style>
+    #pagina {
+        margin: auto;
+        width: 1000px;
+        height: 1000px;
+        position: relative;
+        background-color: black;
+    }
+    @media screen and (max-width: 768px) {
+            #pagina {
+            width: 450px;
+            height: 500px;
+            }
+        }
+    #logo {
+        color: red;
+        font-size: 40px;
+    }
+    @media screen and (max-width: 768px) {
+            #logo {
+            font-size: 40px;
+            margin-left: 160px;
+            }
+        }
+    #video {
+        border: 0px;
+    }
+    @media screen and (max-width: 768px) {
+            #video {
+            width: 450px;
+            height: 300px;
+            }
+        }
+    #botaotrailer {
+        position: absolute;
+        bottom: 500px;
+        left: 20px;
+    }
+    @media screen and (max-width: 768px) {
+            #botaotrailer {
+                position: absolute;
+                bottom: 270px;
+                left: 10px;
+            }
+        }
+    @media screen and (max-width: 768px) {
+        #button {
+            width: 80px;
+            height: 40px;
+        }
+    }
+    #filmes {
+        color: white;
+    }
+    #classico {
+        width: 250px;
+        height: 200px;
+    }
+    @media screen and (max-width: 768px) {
+            #classico {
+            width: 200px;
+            height: 150px;
+            }
+        }
+    #trevas {
+        width: 250px;
+        height: 200px;
+    }
+    @media screen and (max-width: 768px) {
+            #trevas {
+            width: 200px;
+            height: 150px;
+            }
+        }
+    body {
+        background-color: black
+        ;
+    }
+    
+</style>
+<body>
+    <h2 id="logo">ShowFlix</h2> 
+    <div id="pagina">   
+        <!--area do video-->
+        <video id="video" controls width="100%" height="600px" autoplay muted>
+            <source src="../ShowFlix/Deuses do Egito - Trailer oficial legendado.mp4">
+        </video>
+        <!--botão para assistir-->
+        <div id="botaotrailer">
+            <a href="../ShowFlix/filme1.html">
+                <button style="height: 50px; width: 100px;">Assistir</button>
+            </a>
+        </div>
+        <!--Plataforma-->
+        <h3 id="filmes">Filmes na Plataforma</h3>
+        <a href="../ShowFlix/filme2.html">
+            <img src="../ShowFlix/classico.jpg" alt="um classico filme de terror" id="classico">
+        </a>
+        <a href="../ShowFlix/filme3.html">
+            <img src="../ShowFlix/nas trevas.jpg"width="300px" height="150px" alt=" O homem nas trevas" id="trevas">
+        </a>
+    </div>
+    
+</body>
+</html>
